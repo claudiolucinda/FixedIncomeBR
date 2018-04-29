@@ -19,7 +19,7 @@ PChg_BRbond <- function(dataEval=NULL, maturity, coupon_rate=NULL,
                          VF, YTM, months_coupon)
   duration<-data_0[1,1]
   convexity<-data_0[1,2]
-  dYTM<-dYTM/252
+  dYTM<-dYTM
 
   mod_dur<-duration/((1+YTM)^(1/252))
   Pchg<--mod_dur*dYTM+(0.5)*(convexity-mod_dur^2)*dYTM^2

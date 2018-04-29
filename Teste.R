@@ -26,6 +26,7 @@ teste01_LTN<-PU_BRbond(dataEval = NULL,maturity="2021-01-01", coupon_rate = NULL
 teste02_LTN<-Events_BRbond(dataEval = NULL,maturity="2021-01-01", coupon_rate = NULL, VF = 1000,
                        YTM=.0783, months_coupon = NULL)
 
+source("./R/DurConv_BRbond.R")
 teste03_LTN<-DurConv_BRbond(dataEval = NULL,maturity="2019-05-15", coupon_rate = NULL, VF = 1000,
                         YTM=.0783, months_coupon = NULL)
 
@@ -60,11 +61,9 @@ teste05<-PChg_BRbond(dataEval = NULL,maturity="2026-08-15", coupon_rate = .1, VF
                      YTM=.0971, months_coupon = 6,dYTM=.0001)
 
 teste01_NTN<-PU_BRbond(dataEval = NULL,maturity="2026-08-15", coupon_rate = .06, VF = 3069.756606,
-                       YTM=.0463, months_coupon = 6)
+                       YTM=.0971, months_coupon = 6)
 teste01_NTN2<-PU_BRbond(dataEval = NULL,maturity="2026-08-15", coupon_rate = .06, VF = 3069.756606,
-                       YTM=.0464, months_coupon = 6)
+                       YTM=.0972, months_coupon = 6)
 
 (teste01_NTN2/teste01_NTN-1)
 
-devtools::install_github("klutometis/roxygen")
-library(roxygen2)
