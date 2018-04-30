@@ -16,6 +16,6 @@ R Package for Brazilian Fixed Income Bonds. It is a set of functions intended fo
 | Tesouro IPCA+ Juros (NTNB) | PU_NTNBc_BR.R | YTM_NTNBc_BR.R | Events_NTNBc_BR.R | DurConv_NTNBc_BR.R   |
 | Generic Function           | PU_BRBond.R | YTM_BRBond.R | Events_BRBond.R | DurConv_BRBond.R |
 
-There is an additional function, `get_VNA_AMBIMA.R` which gets the relevant values for the indexed bonds.
+There is an additional function, `get_VNA_AMBIMA.R` which gets the relevant values for the indexed bonds. To install, use the `devtools::install_github("claudiolucinda/FixedIncomeBR")`.
 
 
