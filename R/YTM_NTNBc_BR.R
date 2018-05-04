@@ -11,7 +11,7 @@
 YTM_NTNBc_BR <- function(.dataEval=NULL, .maturity, .PU) {
 
   data<-get_VNA_AMBIMA()
-  .VF<-data[data$V2 %in% c("760100"),2]
+  .VF<-data[1,1]
   
   YTM<-YTM_BRbond(dataEval = .dataEval,maturity=.maturity, coupon_rate = .06, VF = .VF,
                              PU=.PU, months_coupon = 6)

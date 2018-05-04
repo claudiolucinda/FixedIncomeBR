@@ -12,7 +12,7 @@
 DurConv_NTNB_BR <- function(.dataEval=NULL, .maturity, .YTM) {
 
   data<-get_VNA_AMBIMA()
-  .VF<-data[data$V2 %in% c("760100"),2]
+  .VF<-data[1,1]
   
   OUT<-DurConv_BRbond(dataEval = .dataEval,maturity=.maturity, coupon_rate = NULL, VF = .VF,
                       YTM=.YTM, months_coupon = NULL)
