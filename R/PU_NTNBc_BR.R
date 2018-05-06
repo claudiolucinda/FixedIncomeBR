@@ -10,7 +10,7 @@
 #' 
 PU_NTNBc_BR <- function(.dataEval=NULL, .maturity, .YTM) {
   
-  data<-get_VNA_AMBIMA()
+  data<-get_VNA_AMBIMA(type="NTNB")
   .VF<-data[1,1]
   
   PU<-PU_BRbond(dataEval = .dataEval,maturity=.maturity, coupon_rate = .06, VF = .VF,

@@ -8,7 +8,7 @@
 #' @return YTM - Yield to Maturity
 #' @export
 #' 
-YTM_NTNF_BR <- function(.dataEval=NULL, .maturity, .PU) {
+YTM_LTN_BR <- function(.dataEval=NULL, .maturity, .PU) {
 
   YTM<-YTM_BRbond(dataEval = .dataEval,maturity=.maturity, coupon_rate = NULL, VF = 1000,
                              PU=.PU, months_coupon = NULL)

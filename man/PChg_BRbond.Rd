@@ -2,29 +2,23 @@
 % Please edit documentation in R/PChg_BRbond.R
 \name{PChg_BRbond}
 \alias{PChg_BRbond}
-\title{Function for estimating the predicted price change for a Brazilian bond}
+\title{PChg_BRbond
+Function to compute percentage change in Brazilian bond prices given a change in Yield to Maturity 
+Note: it only computes changes for the current date}
 \usage{
-PChg_BRbond(dataEval = NULL, maturity, coupon_rate = NULL, VF, YTM,
-  months_coupon, dYTM)
+PChg_BRbond(type, .maturity, .YTM, .dYTM)
 }
 \arguments{
-\item{dataEval}{Date in which the bond is to be priced. If NULL, the price is for the current date.}
+\item{type}{String specifying which bond type. Currently accepted "NTNF", "NTNB", "NTNBc" and "LTN"}
 
-\item{maturity}{Maturity date.}
+\item{.maturity}{Maturity of the Bond}
 
-\item{coupon_rate}{Coupon Rate. When NULL, it returns the price of a zero coupon.}
+\item{.YTM}{Current Yield to Maturity}
 
-\item{VF}{Face value of the bond.}
-
-\item{YTM}{Yield to Maturity.}
-
-\item{months_coupon}{Number of months between each coupon. If coupon is NULL, not used.}
-
-\item{dYTM}{Predicted change in YTM (in basis points)}
-}
-\value{
-Predicted percentage change in bond price
+\item{.dYTM}{Proposed change}
 }
 \description{
-Function for estimating the predicted price change for a Brazilian bond
+PChg_BRbond
+Function to compute percentage change in Brazilian bond prices given a change in Yield to Maturity 
+Note: it only computes changes for the current date
 }

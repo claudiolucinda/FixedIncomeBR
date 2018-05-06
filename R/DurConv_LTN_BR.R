@@ -9,7 +9,7 @@
 #' @export
 #' 
 
-DurConv_NTNF_BR <- function(.dataEval=NULL, .maturity, .YTM) {
+DurConv_LTN_BR <- function(.dataEval=NULL, .maturity, .YTM) {
   
   OUT<-DurConv_BRbond(dataEval = .dataEval,maturity=.maturity, coupon_rate = NULL, VF = 1000,
                       YTM=.YTM, months_coupon = NULL)

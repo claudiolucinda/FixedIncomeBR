@@ -10,7 +10,7 @@
 #' 
 Events_NTNF_BR <- function(.dataEval=NULL, .maturity, .YTM) {
 
-  Events<-PU_BRbond(dataEval = .dataEval,maturity=.maturity, coupon_rate = .1, VF = 1000,
+  Events<-Events_BRbond(dataEval = .dataEval,maturity=.maturity, coupon_rate = .1, VF = 1000,
                              YTM=.YTM, months_coupon = 6)
   
   

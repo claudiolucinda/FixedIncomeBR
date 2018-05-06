@@ -8,12 +8,12 @@
 #' @return List of Events as a Data Frame
 #' @export
 #' 
-Events_NTNF_BR <- function(.dataEval=NULL, .maturity, .YTM) {
+Events_NTNB_BR <- function(.dataEval=NULL, .maturity, .YTM) {
 
-  data<-get_VNA_AMBIMA()
+  data<-get_VNA_AMBIMA(type="NTNB")
   .VF<-data[1,1]
   
-  Events<-PU_BRbond(dataEval = .dataEval,maturity=.maturity, coupon_rate = NULL, VF = .VF,
+  Events<-Events_BRbond(dataEval = .dataEval,maturity=.maturity, coupon_rate = NULL, VF = .VF,
                              YTM=.YTM, months_coupon = NULL)
   
   

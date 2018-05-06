@@ -10,7 +10,7 @@
 #' @return Bond Price.
 #' @export
 #'
-
+require(lubridate)
 PU_BRbond <- function(dataEval=NULL, maturity, coupon_rate=NULL,
                       VF, YTM, months_coupon) {
   data(holidaysANBIMA, package = 'bizdays')
