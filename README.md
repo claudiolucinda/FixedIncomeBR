@@ -18,6 +18,8 @@ R Package for Brazilian Fixed Income Bonds. It is a set of functions intended fo
 
 There is an additional function, `get_VNA_AMBIMA.R` which gets the relevant values for the indexed bonds. Another one is `PChg_BRbond.R`which gives the predicted percentage in bond prices for a given change in Yield to Maturity.
 
+There is also a suite of functions to price LTN bonds using the Black-Derman-Toy model using the ANBIMA model for the term structure.
+
 To install, use the `devtools::install_github("claudiolucinda/FixedIncomeBR")`.
 
 
