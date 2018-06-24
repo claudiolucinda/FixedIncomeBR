@@ -20,6 +20,8 @@ There is an additional function, `get_VNA_AMBIMA.R` which gets the relevant valu
 
 There is also a suite of functions to price LTN bonds using the Black-Derman-Toy model using the ANBIMA model for the term structure.
 
+There is also a function for using quadratic splines for estimating the term structure, called the *Lorimier Method* in the Damir Filipovic's Springer Book. There is an example in the Tests folder.
+
 To install, use the `devtools::install_github("claudiolucinda/FixedIncomeBR")`.
 
 
